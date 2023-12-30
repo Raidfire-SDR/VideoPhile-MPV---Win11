@@ -40,6 +40,7 @@ Interpolation and debanding OFF
 
 
 You should have all files here except the .bak file.
-![image](https://github.com/Raidfire-SDR/VideoPhile-MPV---Win11/assets/125891383/6e224671-c9fb-4d7b-8053-0e843fa66307)
+![image](https://github.com/Raidfire-SDR/VideoPhile-MPV---Win11/assets/125891383/0ea29ef9-ab74-44c5-90df-524925ad3971)
+
 
 
