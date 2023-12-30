@@ -39,6 +39,7 @@ Fine tuned shaders to remap SDR to HDR tonemaps, using logic to read the videofi
 Interpolation and debanding OFF
 
 
+You should have all files here except the .bak file.
 ![image](https://github.com/Raidfire-SDR/VideoPhile-MPV---Win11/assets/125891383/6e224671-c9fb-4d7b-8053-0e843fa66307)
 
 
