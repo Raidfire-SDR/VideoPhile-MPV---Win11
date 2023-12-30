@@ -36,4 +36,4 @@ SDR
 
 Fine tuned shaders to remap SDR to HDR tonemaps, using logic to read the videofile tonemapping format and apply the correct profile to remap to the correct HDR values, this does not create false HDR it takes the SDR colour values and converts them to equivalent colour values in the HDR range, without the luminosity data requirewd for HDR, this allows MPV to display the correct colours without turning off HDR in display settings, it can be left on permanently.
 
-Inerpolation and debanding OFF
+Interpolation and debanding OFF
