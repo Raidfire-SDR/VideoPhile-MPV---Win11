@@ -34,6 +34,10 @@ Audio normailised for 5.1
 
 SDR
 
-Fine tuned shaders to remap SDR to HDR tonemaps, using logic to read the videofile tonemapping format and apply the correct profile to remap to the correct HDR values, this does not create false HDR it takes the SDR colour values and converts them to equivalent colour values in the HDR range, without the luminosity data requirewd for HDR, this allows MPV to display the correct colours without turning off HDR in display settings, it can be left on permanently.
+Fine tuned shaders to remap SDR to HDR tonemaps, using logic to read the videofile tonemapping format and apply the correct profile to remap to the correct HDR values, this does not create false HDR it takes the SDR colour values and converts them to equivalent colour values in the HDR range, without the luminosity data requirewd for HDR, this allows MPV to display the correct colours without turning off HDR in display settings, it can be left on permanently. For the SDR config to work you will first need to download the shader directory in this repositary and place it in the same directory as MPV.
 
 Interpolation and debanding OFF
+
+
+![image](https://github.com/Raidfire-SDR/VideoPhile-MPV---Win11/assets/125891383/ab05764b-9a61-4b97-9a4a-b4b3f27d36f9)
+
