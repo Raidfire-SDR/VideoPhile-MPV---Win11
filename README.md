@@ -4,7 +4,7 @@ MPV not included, please install first, this is just many hours of fine tuning c
 
 
 MPV Config for Win11 with preconfigured HQ GPU decoding, passthru HDR, Display Scaling, Python free precompiled add on - Browser to MPV server with yt-dlp backend.
-Seperate Config files for SDR and HDR content easily switched before running MPV by executing HDR_SWITCH.BAT which DELETES the running config and copies the default SDR or HDR settings based on the option chosen. All updates to config must be copied to either the SDR_CONF or HDR_CONF to be made permanant, currently running config will be saved to a .bak file before the main conf file is updated.
+Seperate Config files for SDR and HDR content easily switched before running MPV by executing 'HDR SWITCH.BAT' which DELETES the running config and copies the default SDR or HDR settings based on the option chosen. All updates to config must be copied to either the SDR_CONF or HDR_CONF to be made permanant, currently running config will be saved to a .bak file before the main conf file is updated.
 
 To pass Youtube and other browser based video platforms to MPV install the following browser extension for Chrome or Edge, once installed goto extension settings and make the button visable. https://chromewebstore.google.com/detail/play-with-mpv/hahklcmnfgffdlchjigehabfbiigleji
 
