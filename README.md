@@ -12,6 +12,12 @@ Ensure you have downloaded the latest version of YT.DLP https://github.com/yt-dl
 
 Run the server MPV Browser Server.exe, now open a youtube video in your browser and click the MPV button, you should see the request passed to the server window, after a couple of seconds the MPV window should open.
 
+HDR Switch batch file options:
+
+!. Write HDR Presets to main Config file
+2. Write SDR Presets to main config file
+3 Write SDR Presets to main config file and start the Browser Server
+
 
 Current configs: 
 
