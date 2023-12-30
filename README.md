@@ -14,15 +14,26 @@ Run the server MPV Browser Server.exe, now open a youtube video in your browser 
 
 
 Current configs: 
+
 HDR
+
 Metadata Passthru
+
 Interpolation on and tuned
+
 Debanding on and tuned
+
 Display not GPU or software scaling
+
 HQ prolife pre applied and tuned
+
 D3d11 Hardware decoding
+
 Audio normailised for 5.1
 
+
 SDR
+
 Fine tuned shaders to remap SDR to HDR tonemaps, using logic to read the videofile tonemapping format and apply the correct profile to remap to the correct HDR values, this does not create false HDR it takes the SDR colour values and converts them to equivalent colour values in the HDR range, without the luminosity data requirewd for HDR, this allows MPV to display the correct colours without turning off HDR in display settings, it can be left on permanently.
+
 Inerpolation and debanding OFF
