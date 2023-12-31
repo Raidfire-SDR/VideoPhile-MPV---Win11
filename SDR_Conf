@@ -1,30 +1,27 @@
-script-opts-append=uosc-languages=~~/zh-hans-ex.json,zh-hans
+########### SDR CONFIG ############
 script-opts-append=uosc-refine=text_width,sorting
-script-opts-append=uosc-scale=1.25
+script-opts-append=uosc-scale=3.25
 script-opts-append=uosc-menu_min_width=200
 script-opts-append=uosc-menu_item_height=44
 script-opts-append=uosc-top_bar_persistency=idle
 script-opts-append=uosc-top_bar_position=no
-script-opts-append=uosc-controls=never
-script-opts-append=uosc-progress=never
-script-opts-append=uosc-timeline_style=bar
-script-opts-append=uosc-timeline_step=-5
-script-opts-append=uosc-chapter_ranges=openings:81cfff80,endings:81cfff80,ads:ffe26480
-script-opts-append=uosc-color=foreground=fffbfe,foreground_text=1c1b1f,background=1c1b1f,background_text=fffbfe,curtain=000000,success=a5e075,error=ff616e
 
-script-opts-append=thumbfast-max_width=320
-script-opts-append=thumbfast-max_height=320
+no-title-bar
 
-script-opts-append=celebi-volume=yes
-script-opts-append=celebi-mute=yes
 
-script-opts-append=autoload-directory_mode=ignore
-script-opts-append=autoload-same_type=yes
 
-script-opts-append=autocrop-auto=no
-script-opts-append=autocrop-detect_round=4
-script-opts-append=autocrop-detect_min_ratio=0.74
-script-opts-append=autocrop-suppress_osd=yes
+
+
+
+
+
+
+
+keep-open
+save-position-on-quit
+resume-playback-check-mtime
+watch-later-options=start,vid,aid,sid
+reset-on-next-file=pause,loop-file,brightness,contrast,gamma,saturation,hue,deinterlace,vf,af
 
 --vo=gpu
 --gpu-api=d3d11

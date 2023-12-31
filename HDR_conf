@@ -1,3 +1,5 @@
+########### HDR CONFIG ############
+
 --vo=gpu-next
 --gpu-api=d3d11
 --cscale=ewa_lanczossharp
@@ -10,7 +12,7 @@
 --deband-threshold=64
 --deband-range=16
 
-
+script-opts-append=autoload-directory_mode=ignore
 
 
 --volume=50
@@ -30,3 +32,17 @@
 --tscale-blur=0.6991556596428412
 --tscale-radius=1.05
 --tscale-clamp=0.0
+
+no-osc
+no-osd-bar
+no-title-bar
+
+snap-window
+autofit-larger=96%x88%
+autofit-smaller=33%x66%
+
+keep-open
+save-position-on-quit
+resume-playback-check-mtime
+watch-later-options=start,vid,aid,sid
+reset-on-next-file=pause,loop-file,brightness,contrast,gamma,saturation,hue,deinterlace,vf,af
