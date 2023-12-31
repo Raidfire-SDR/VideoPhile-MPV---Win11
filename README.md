@@ -44,7 +44,10 @@ Fine tuned shaders to remap SDR to HDR tonemaps, using logic to read the videofi
 
 Interpolation and debanding OFF
 
-
+TV / Display Setup
+My Setup uses a Samsund TV, you will need to find the corresponding settings for your own device
+SDR - Picture mode Standard or Entertain, Contrast Enhancer off or Low, clarity assist off or auto depending on personal preferances.
+HDR - Filmmmaker mode or entertain, clarity and contrast settings off, contrast enhancement on HDR will lead to loss of detail in shadows and on dark objects and often looks agressivly out of balance.
 You should have all files here except the .bak file.
 ![image](https://github.com/Raidfire-SDR/VideoPhile-MPV---Win11/assets/125891383/0ea29ef9-ab74-44c5-90df-524925ad3971)
 
