@@ -1,5 +1,9 @@
 Echo Off
+cls
+set /p "var="<"mpv.conf"
+
 Echo Welcome To HDR / SDR Switch
+echo Current Config = %var%
 Echo 1 Write HDR Presets to main Config file
 Echo 2 Write SDR Presets to main Config file
 Echo 3 Write SDR Presets to main Config file and Start Browser Server
@@ -23,6 +27,7 @@ type mpv.conf >> mpv.conf.bak
 del mpv.conf
 type SDR_Conf >> mpv.conf
 Echo You chose SDR
+Echo Writing SDR presets to config file and enabling lua scripts
 Echo Exiting in 5 seconds
 timeout /T 5
 
@@ -36,6 +41,7 @@ del mpv.conf.bak
 type mpv.conf >> mpv.conf.bak
 del mpv.conf
 ECHO You Chose HDR
+Echo Writing HDR presets to config file and disabling lua scripts
 type HDR_Conf >> mpv.conf
 Echo Exiting in 5 seconds
 timeout /T 5
@@ -50,6 +56,7 @@ del mpv.conf.bak
 type mpv.conf >> mpv.conf.bak
 del mpv.conf
 ECHO You Chose SDR with Browser Server
+Echo Writing SDR presets to config file and enabling lua scripts
 type SDR_Conf >> mpv.conf
 Echo Starting server in 5 seconds
 timeout /T 5
