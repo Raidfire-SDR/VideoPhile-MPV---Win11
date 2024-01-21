@@ -1,20 +1,17 @@
 ########### SDR CONFIG ############
-script-opts-append=uosc-refine=text_width,sorting
-script-opts-append=uosc-scale=3.25
-script-opts-append=uosc-menu_min_width=200
-script-opts-append=uosc-menu_item_height=44
-script-opts-append=uosc-top_bar_persistency=idle
-script-opts-append=uosc-top_bar_position=no
+sub-font='Arial Regular'
+
+sub-border-size=1
+
+sub-color='#CDCDCD'
+
+sub-shadow=3
+
+sub-shadow-color='#000000'
+
+sub-shadow-offset=2
 
 no-title-bar
-
-
-
-
-
-
-
-
 
 
 keep-open
@@ -23,17 +20,18 @@ resume-playback-check-mtime
 watch-later-options=start,vid,aid,sid
 reset-on-next-file=pause,loop-file,brightness,contrast,gamma,saturation,hue,deinterlace,vf,af
 
---vo=gpu
+--vo=gpu-next
 --gpu-api=d3d11
 --cscale=ewa_lanczossharp
 --scale=ewa_lanczossharp
 --hwdec=d3d11va
---fs-screen=2
---glsl-shader=~~/shaders/hdeband.glsl
---glsl-shader=~~/shaders/hdr-toys/utils/flip.glsl
+#--fs-screen=1
+#--glsl-shader=~~/shaders/hdeband.glsl
+#--glsl-shader=~~/shaders/hdr-toys/utils/flip.glsl
 --volume=50
---af=lavfi=[dynaudnorm=f=75:g=25:p=0.55]
 
+--tone-mapping=auto 
+--gamut-mapping-mode=auto
 
 
 --save-position-on-quit
@@ -45,11 +43,11 @@ profile-cond=get("video-params/primaries") == "bt.2020" and get("video-params/ga
 profile-restore=copy
 target-prim=bt.2020
 target-trc=pq
-glsl-shader=~~/shaders/hdr-toys/utils/clip_both.glsl
+
 glsl-shader=~~/shaders/hdr-toys/transfer-function/pq_inv.glsl
 glsl-shader=~~/shaders/hdr-toys/utils/chroma_correction.glsl
 glsl-shader=~~/shaders/hdr-toys/tone-mapping/dynamic.glsl
-glsl-shader=~~/shaders/hdr-toys/gamut-mapping/jedypod.glsl
+
 glsl-shader=~~/shaders/hdr-toys/transfer-function/bt1886.glsl
 
 [bt.2100-hlg]
@@ -57,11 +55,10 @@ profile-cond=get("video-params/primaries") == "bt.2020" and get("video-params/ga
 profile-restore=copy
 target-prim=bt.2020
 target-trc=hlg
-glsl-shader=~~/shaders/hdr-toys/utils/clip_both.glsl
+
 glsl-shader=~~/shaders/hdr-toys/transfer-function/hlg_inv.glsl
 glsl-shader=~~/shaders/hdr-toys/utils/chroma_correction.glsl
-glsl-shader=~~/shaders/hdr-toys/tone-mapping/dynamic.glsl
-glsl-shader=~~/shaders/hdr-toys/gamut-mapping/jedypod.glsl
+l
 glsl-shader=~~/shaders/hdr-toys/transfer-function/bt1886.glsl
 
 [bt.2020]
@@ -70,7 +67,7 @@ profile-restore=copy
 target-prim=bt.2020
 target-trc=bt.1886
 glsl-shader=~~/shaders/hdr-toys/transfer-function/bt1886_inv.glsl
-glsl-shader=~~/shaders/hdr-toys/gamut-mapping/jedypod.glsl
+
 glsl-shader=~~/shaders/hdr-toys/transfer-function/bt1886.glsl
 
 [dovi-p5]
@@ -78,9 +75,8 @@ profile-cond=get("video-params/primaries") == "bt.709" and get("video-params/gam
 profile-restore=copy
 target-prim=bt.2020
 target-trc=pq
-glsl-shader=~~/shaders/hdr-toys/utils/clip_both.glsl
+
 glsl-shader=~~/shaders/hdr-toys/transfer-function/pq_inv.glsl
 glsl-shader=~~/shaders/hdr-toys/utils/chroma_correction.glsl
-glsl-shader=~~/shaders/hdr-toys/tone-mapping/dynamic.glsl
-glsl-shader=~~/shaders/hdr-toys/gamut-mapping/jedypod.glsl
+
 glsl-shader=~~/shaders/hdr-toys/transfer-function/bt1886.glsl
